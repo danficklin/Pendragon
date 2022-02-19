@@ -8,4 +8,10 @@
     <PackageReference Include="Swashbuckle.AspNetCore" Version="5.6.3" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Pendragon.Services\Pendragon.Services.csproj" />
+    <ProjectReference Include="..\Pendragon.Data\Pendragon.Data.csproj" />
+    <ProjectReference Include="..\Pendragon.Models\Pendragon.Models.csproj" />
+  </ItemGroup>
+
 </Project>
