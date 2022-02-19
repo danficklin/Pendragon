@@ -1,0 +1,153 @@
+using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Threading.Tasks;
+
+namespace Pendragon.Data.Entities
+{
+    public class CharacterEntity
+    {
+        public int Id { get; set; }
+        public string Name { get; set; }
+        public int Age { get; set; }
+        public int SonNumber { get; set; }
+        public LocationEntity Homeland { get; set; }
+        public string Culture { get; set; }
+        public CharacterEntity Lord { get; set; }
+        public string CurrentClass { get; set; }
+        public LocationEntity CurrentHome { get; set; }
+        public List<string> DistinctiveFeatures { get; set; }
+        public int Chaste { get; set; }
+        public int Energetic { get; set; }
+        public int Forgiving { get; set; }
+        public int Generous { get; set; }
+        public int Just { get; set; }
+        public int Merciful { get; set; }
+        public int Modest { get; set; }
+        public int Prudent { get; set; }
+        public int Spiritual { get; set; }
+        public int Temperate { get; set; }
+        public int Trusting { get; set; }
+        public int Valorous { get; set; }
+        public List<string> DirectedTraits { get; set; }
+        public int FealtyLord { get; set; }
+        public int HomageLiege { get; set; }
+        public int loveFamily { get; set; }
+        public int Hospitality { get; set; }
+        public int Honor { get; set; }
+        public List<string> Hates { get; set; }
+        public List<string> OtherPassions { get; set; }
+        public int Size { get; set; }
+        public int Dexterity { get; set; }
+        public int Strength { get; set; }
+        public int Constitution { get; set; }
+        public int Appearance { get; set; }
+        public int Battle { get; set; }
+        public int Siege { get; set; }
+        public int Horsemanship { get; set; }
+        public int Sword { get; set; }
+        public int Lance { get; set; }
+        public int Spear { get; set; }
+        public int Dagger { get; set; }
+        public int Axe { get; set; }
+        public int Bow { get; set; }
+        public int Crossbow { get; set; }
+        public int Grapple { get; set; }
+        public int Greataxe { get; set; }
+        public int Greatspear { get; set; }
+        public int Javelin { get; set; }
+        public int Mace { get; set; }
+        public int Awareness { get; set; }
+        public int Boating { get; set; }
+        public int Compose { get; set; }
+        public int Courtesy { get; set; }
+        public int Dancing { get; set; }
+        public int FaerieLore { get; set; }
+        public int Falconry { get; set; }
+        public int Fashion { get; set; }
+        public int FirstAid { get; set; }
+        public int Flirting { get; set; }
+        public int Folklore { get; set; }
+        public int Gaming { get; set; }
+        public int Heraldry { get; set; }
+        public int Hunting { get; set; }
+        public int Intrigue { get; set; }
+        public int Orate { get; set; }
+        public int PlayHarp { get; set; }
+        public int PlayLute { get; set; }
+        public int PlayBagpipes { get; set; }
+        public int PlayDoublePipes { get; set; }
+        public int PlayDrums { get; set; }
+        public int PlayFlute { get; set; }
+        public int PlayHorn { get; set; }
+        public int PlayRecorder { get; set; }
+        public int PlayTrumpet { get; set; }
+        public int ReadLatin { get; set; }
+        public int Recognize { get; set; }
+        public int ReligionChristianityBritish { get; set; }
+        public int ReligionChristianityRoman { get; set; }
+        public int ReligionPagan { get; set; }
+        public int Romance { get; set; }
+        public int Singing { get; set; }
+        public int Stewardship { get; set; }
+        public int Swimming { get; set; }
+        public int Tourney { get; set; }
+        public int Glory { get; set; }
+        public ItemEntity ArmorBattle { get; set; }
+        public ItemEntity ArmorHunting{ get; set; }
+        public ItemEntity ArmorTourney { get; set; }
+        public List<CharacterEntity> Squires { get; set; }
+        public List<MountEntity> Horses { get; set; }
+        public int AnnualReligionGlory { get; set; }
+        public int AnnualChivalryGlory { get; set; }
+        public int AnnualPassionsGlory { get; set; }
+        public int AnnualCastlesGlory { get; set; }
+        public int AnnualHoldingsGlory { get; set; }
+        public int AnnualTreasureGlory { get; set; }
+        public int AnnualMaintenanceGradeGlory { get; set; }
+        public int JoustWins { get; set; }
+        public int JoustLosses { get; set; }
+        public List<ManorEntity> Holdings { get; set; }
+        public int Libra { get; set; }
+        public int Shillings { get; set; }
+        public int Denarii { get; set; }
+        public List<ItemEntity> WarGear { get; set; }
+        public List<ItemEntity> PersonalGear { get; set; }
+        public List<ItemEntity> TravelGear { get; set; }
+        public string Clothing { get; set; }
+        public int ClothingValue { get; set; }
+        public List<ItemEntity> AtHomeGear { get; set; }
+        public int OldFamilyKnights { get; set; }
+        public int MiddleAgedFamilyKnights { get; set; }
+        public int YoungFamilyKnights { get; set; }
+        public int TotalFamilyKnights { get; set; }
+        public List<CharacterEntity> FamilyKnightList { get; set; }
+        public int VassalKnights { get; set; }
+        public List<CharacterEntity> VassalKnightList { get; set; }
+        public int OtherLineageMen { get; set; }
+        public List<CharacterEntity> OtherLineageMenList { get; set; }
+        public int Levy { get; set; }
+        public YearEntity Born { get; set; }
+        public YearEntity Knighted { get; set; }
+        public YearEntity JoinedRoundTable { get; set; }
+        public YearEntity Landed { get; set; }
+        public YearEntity Ennobled { get; set; }
+        public YearEntity Wed { get; set; }
+        public YearEntity Died { get; set; }
+        public CharacterEntity Father { get; set; }
+        public CharacterEntity Mother { get; set; }
+        public int FathersGloryToSon { get; set; }
+        public int FamilyWealth { get; set; }
+        public string FamilyCharacteristic { get; set; }
+        public CharacterEntity Spouse { get; set; }
+        public CharacterEntity Lover { get; set; }
+        public List<CharacterEntity> Children { get; set; }
+        public string Will { get; set; }
+        public List<EventEntity> EventsParticipatedIn { get; set; }
+        public List<LocationEntity> LocationsFoundAt { get; set; }
+        public List<LocationEntity> LocationsVisited { get; set; }
+        public FamilyEntity Family { get; set; }
+
+
+    }
+}
